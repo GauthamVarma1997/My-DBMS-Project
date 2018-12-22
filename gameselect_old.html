@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>gameselect Form</title>
+</head>
+<body>
+  
+ <form action="insert2.php" method="POST">
+  <table>
+   <tr>
+    <td>Game Name :</td>
+    <td><input type="text" name="gamingname" required></td>
+   </tr>
+   <tr>
+    <td>Game Type :</td>
+    <td><input type="text" name="gametype" required></td>
+   </tr>
+    <tr>
+    <td><input type="submit" value="Submit"></td>
+   </tr>
+   
+  </table>
+ </form>
+</body>
+</html>
+
+    
+
+<!-- <?php 
+// function Login()
+//  {
+//     if(empty($_POST['rollno']))
+//     {
+//         $this->HandleError("rollno is empty!");
+//         return false;
+//     }
+//     if(empty($_POST['password']))
+//  {
+//         $this->HandleError("Password is empty!");
+//  return false;
+//  }
+//  $rollno = trim($_POST['rollno']);
+//  $password = trim($_POST['password']);
+//  if(!$this->CheckLoginInDB($rollno,$password))
+//  {
+//         return false;
+//     }
+//  session_start();
+//  $_SESSION[$this->GetLoginSessionVar()] = $rollno;
+//  return true;
+//  }
+
+//  function CheckLoginInDB($rollno,$password)
+// {
+//     if(!$this->DBLogin())
+//     {
+//         $this->HandleError("Database login failed!");
+//         return false;
+//     }          
+//     $rollno = $this->SanitizeForSQL($rollno);
+//     $password = ($password);
+//     $qry = "Select rollno, password from $this->gamerinfo1 ".
+//         " where rollno='$rollno' and password='$password' ";
+    
+//     $result = mysql_query($qry,$this->connection);
+    
+//     if(!$result || mysql_num_rows($result) <= 0)
+//     {
+//         $this->HandleError("Error logging in. ".
+//             "The username or password does not match");
+//         return false;
+//     }
+//     else echo "hi";  
+// }
+?>

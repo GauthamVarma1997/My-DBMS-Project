@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin-left:100px;margin-right: 100px;margin-top: 200px;margin-bottom: 200px;
+  background: -webkit-linear-gradient(45deg, #00dbde, #000000);
+
+  background: -o-linear-gradient(45deg, #00dbde, #000000);
+
+  background: -moz-linear-gradient(45deg, #00dbde, #000000);
+
+  background: linear-gradient(45deg, #00dbde, #000000);
+
+ }
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+  background-color: #ffffff;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+</style>
+</head>
+<body>
+<form action="ques.php" method="POST">
+
+<div class="slideshow-container">
+
+<div class="mySlides">
+  <h3>Map knowledge is the key to defining an experienced siege player. Given a new map, how do you analyze it?</h3>
+
+		<select class="selection-2"  name="q1">
+			<option>Select option</option>
+			<option value="a">I generally invest my time in exploring the map and analyzing it in detail, although the risk is high.</option>
+			<option value="b">My analysis involves exploring the map in detail  (internal analysis) as well as breaking the windows (external view).</option>
+			<option value="c">My experience lies in my aiming accuracy and recoil handling. So given a new map, I stay at a location and learn the map gradually through experience.</option>
+			<option value="d">My approach to analysis highly depends on peer review. I will go ahead with what my team finds essential for me to do in a situation.</option>
+		</select>
+</div>
+
+<div class="mySlides">
+  <h3>If your teammate is the sole reason behind reducing your chances of winning, how would you choose to respond?</h3>
+
+		<select class="selection-2"  name="q2">
+			<option>Select option</option>
+			<option value="a">According to me it is essential to react to the situation with anger as it is highly important that the team does not repeat the mistake ever again.</option>
+			<option value="b">If I know that my teammate holds good ability, I react with anger as it is expected of him to not commit such a mistake.</option>
+			<option value="c">I would try to advise the player as it is necessary for him to know my point of view. If the player is new, we can’t expect much from him. </option>
+			<option value="d">I do not prefer reacting to unpredictable situations as they are a common happening and learning to ignore mistakes is the best way to proceed.</option>
+		</select>
+</div>
+
+<div class="mySlides">
+  <h3>How do you interpret call-outs when it comes to Siege?</h3>
+
+		<select class="selection-2"  name="q3">
+			<option>Select option</option>
+			<option value="a">Call-outs can be really annoying at times, when there is a lack of coordination between the players communicating with me.</option>
+			<option value="b">Call-outs are preferable when I play with friends. While playing with strangers, I choose to give a call-out when I think it can really contribute to the team.</option>
+			<option value="c">According to me, unwanted information served in a call-out can actually cause trouble. </option>
+			<option value="d">Call-outs are extremely advantageous under every situation. The team you are playing with doesn't actually affect the quality of call-outs made. </option>
+		</select>
+
+</div>
+
+<div class="mySlides">
+  <h3>How do strategies affect your gameplay?</h3>
+
+  <select class="selection-2"  name="q4">
+    <option>Select option</option>
+    <option value="a">Strategies play a key role while defining my game plan.</option>
+    <option value="b">Strategies are not really important as the quality of your game play counts.</option>
+    <option value="c">Strategizing each and every situation is more important than creating an overall strategy.</option>
+    <option value="d">The way you play a game is instinctive. Strategies don’t contribute to gameplay.</option>
+  </select>
+
+</div>
+
+<div class="mySlides">
+  <h3>How often does a 'ranked game' affect your style of playing?</h3>
+
+  <select class="selection-2"  name="q5">
+    <option>Select option</option>
+    <option value="a">The style of play is never related to the kind of challenges you would be facing.</option>
+    <option value="b">The style of play is heavily affected as there is a lot of pressure running through our minds</option>
+    <option value="c">If we have a good team, the performance of each individual generally is the same.</option>
+    <option value="d">If we approach a ranked game with an appropriate mentality, the results would be appreciable.</option>
+  </select>
+
+  <input type="submit" value="Submit">
+</div>
+
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+</form>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
